@@ -392,6 +392,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMP6768/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM2.xml \
     vendor/realme/RMP6768/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Verizon_Wireless.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Verizon_Wireless.xml \
     vendor/realme/RMP6768/proprietary/vendor/etc/init/android.hardware.bluetooth@1.0-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.0-service-mediatek.rc \
+    vendor/realme/RMP6768/proprietary/vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.3-service.widevine.rc \
     vendor/realme/RMP6768/proprietary/vendor/etc/init/android.hardware.gnss@2.1-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss@2.1-service-mediatek.rc \
     vendor/realme/RMP6768/proprietary/vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc \
     vendor/realme/RMP6768/proprietary/vendor/etc/init/android.hardware.keymaster@4.0-service.trustonic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@4.0-service.trustonic.rc \
@@ -830,6 +831,7 @@ PRODUCT_PACKAGES += \
     libwapi \
     libwo \
     libwpa_client \
+    libwvhidl \
     libwvdrmengine \
     vendor.mediatek.hardware.audio@6.1 \
     vendor.mediatek.hardware.bluetooth.audio@2.1 \
@@ -1098,6 +1100,8 @@ PRODUCT_PACKAGES += \
     mediatek-telephony-common \
     mediatek-wfo-legacy \
     manifest \
+    manifest_android.hardware.drm@1.3-service.widevine \
+    vendor.mediatek.hardware.dplanner@2.0-service \
     iwpriv \
     kpoc_charger \
     vtservice \
@@ -1117,6 +1121,7 @@ PRODUCT_PACKAGES += \
     fuelgauged_nvram \
     gsm0710muxd \
     android.hardware.bluetooth@1.0-service-mediatek \
+    android.hardware.drm@1.3-service.widevine \
     android.hardware.gnss@2.1-service-mediatek \
     android.hardware.graphics.allocator@4.0-service-mediatek \
     android.hardware.keymaster@4.0-service.trustonic \
